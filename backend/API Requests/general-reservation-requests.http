@@ -1,0 +1,27 @@
+### GET - get all reservations by event id
+GET {{baseUrl}}/api/GeneralReservation/Event/{{eventOneId}}
+Accept: application/json
+
+### GET - get active reservations by event id
+GET {{baseUrl}}/api/GeneralReservation/Event/{{eventOneId}}/active
+Accept: application/json
+
+### GET - get all reservations by student id
+GET {{baseUrl}}/api/GeneralReservation/Student/{{userId}}
+Accept: application/json
+
+### GET - get active reservations by student id
+GET {{baseUrl}}/api/GeneralReservation/Student/{{userId}}/active
+Accept: application/json
+
+### DELETE - cancel reservation by id
+DELETE {{baseUrl}}/api/GeneralReservation/f104aa0e-5962-4046-b8e2-8d8ee02a0267
+
+### POST - create new reservation
+POST {{baseUrl}}/api/GeneralReservation
+Content-Type: application/json
+
+{
+  "eventId": "{{eventOneId}}",
+  "studentId": "{{userId}}"
+}

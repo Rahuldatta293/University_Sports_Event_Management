@@ -1,0 +1,27 @@
+### GET - get all stadiums
+GET {{baseUrl}}/api/Stadium/GetAll
+Accept: application/json
+
+### GET - get stadium by id
+GET {{baseUrl}}/api/Stadium/{{stadiumOneId}}
+Accept: application/json
+
+### POST - create stadium
+POST {{baseUrl}}/api/Stadium
+Content-Type: application/json
+
+{
+  "name": "New Stadium",
+  "address": "New Stadium Address",
+  "capacity": 1000
+}
+
+### PUT - update stadium
+PUT {{baseUrl}}/api/Stadium/{{stadiumOneId}}
+Content-Type: application/json
+
+{
+  "name": "Stadium 1",
+  "address": "Stadium 1 Address",
+  "capacity": 1000
+}

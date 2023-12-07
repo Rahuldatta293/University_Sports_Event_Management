@@ -1,0 +1,25 @@
+### GET - get all sports
+GET {{baseUrl}}/api/Sport/GetAll
+Accept: application/json
+
+### GET - get sport by id
+GET {{baseUrl}}/api/Sport/{{sportOneId}}
+Accept: application/json
+
+### POST - create sport
+POST {{baseUrl}}/api/Sport
+Content-Type: application/json
+
+{
+  "name": "New Sport",
+  "description": "New Sport Description"
+}
+
+### PUT - update sport
+PUT {{baseUrl}}/api/Sport/{{stadiumOneId}}
+Content-Type: application/json
+
+{
+  "name": "Sport 1",
+  "description": "Sport 1 Description"
+}

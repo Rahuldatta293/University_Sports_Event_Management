@@ -1,0 +1,36 @@
+**/Debug
+**/.DS_Store
+
+**/.idea
+*.vsidx
+
+
+# Visual Studio Code
+.vscode
+
+# Rider
+.idea
+
+# Build results
+backend/[Dd]ebug/
+backend/[Dd]ebugPublic/
+backend/[Rr]elease/
+backend/[Rr]eleases/
+backend/x64/
+backend/x86/
+**/build/
+bld/
+backend/[Bb]in/
+backend/[Oo]bj/
+**/[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
+/usevm_dotnet_react/backend/Migrations
+
+
+node_modules/
+package-lock.json

@@ -1,0 +1,46 @@
+### GET - get all general events
+GET {{baseUrl}}/api/GeneralEvent/GetAll
+Accept: application/json
+
+### GET - get event by id
+GET {{baseUrl}}/api/GeneralEvent/GetById/{{eventOneId}}
+Accept: application/json
+
+### GET - get events by organizer id
+GET {{baseUrl}}/api/GeneralEvent/GetEventsByOrganizerId/{{organizerId}}
+Accept: application/json
+
+### POST - create general event
+POST {{baseUrl}}/api/GeneralEvent
+Content-Type: application/json
+
+{
+  "name": "New General Event",
+  "description": "New Event Description",
+  "startDateTime": "2023-06-25T16:00:00Z",
+  "endDateTime": "2023-06-25T19:00:00Z",
+  "addressLine1": "123 Main St",
+  "addressLine2": "Apt 1",
+  "city": "New York",
+  "state": "NY",
+  "zipCode": "10001",
+  "organizerId": "{{organizerId}}",
+  "capacity": 100
+}
+
+### PUT - update general event
+PUT {{baseUrl}}/api/GeneralEvent/33143580-965c-453d-9733-175b8a6eeb8e
+Content-Type: application/json
+
+{
+  "name": "New General Event",
+  "description": "New General Event Description",
+  "startDateTime": "2023-06-25T16:00:00Z",
+  "endDateTime": "2023-06-25T19:00:00Z",
+  "capacity": 1000,
+  "addressLine1": "123 Main St",
+  "addressLine2": "Apt 1",
+  "city": "New York",
+  "state": "NY",
+  "zipCode": "10001"
+}

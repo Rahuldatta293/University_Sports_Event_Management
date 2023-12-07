@@ -1,0 +1,50 @@
+### GET - get all events
+GET {{baseUrl}}/api/Event/GetAll
+Accept: application/json
+
+### GET - get event by id
+GET {{baseUrl}}/api/Event/GetById/{{eventOneId}}
+Accept: application/json
+
+### GET - get events by sport id
+GET {{baseUrl}}/api/Event/GetEventsBySportId/{{sportOneId}}
+Accept: application/json
+
+### GET - get events by organizer id
+GET {{baseUrl}}/api/Event/GetEventsByOrganizerId/{{organizerId}}
+Accept: application/json
+
+### GET - get events by team id
+GET {{baseUrl}}/api/Event/GetEventsByTeamId/{{teamOneId}}
+Accept: application/json
+
+### GET - get events by stadium id
+GET {{baseUrl}}/api/Event/GetEventsByStadiumId/{{stadiumOneId}}
+Accept: application/json
+
+### POST - create event
+POST {{baseUrl}}/api/Event
+Content-Type: application/json
+
+{
+  "name": "New Event",
+  "description": "New Event Description",
+  "sportId": "{{sportOneId}}",
+  "stadiumId": "{{stadiumOneId}}",
+  "organizerId": "{{organizerId}}",
+  "teamOneId": "{{teamOneId}}",
+  "teamTwoId": "{{teamTwoId}}",
+  "startDateTime": "2023-06-25T16:00:00Z",
+  "endDateTime": "2023-06-25T19:00:00Z"
+}
+
+### PUT - update event
+PUT {{baseUrl}}/api/Event/{{eventOneId}}
+Content-Type: application/json
+
+{
+  "name": "New Event",
+  "description": "New Event Description",
+  "startDateTime": "2023-06-25T16:00:00Z",
+  "endDateTime": "2023-06-25T19:00:00Z"
+}

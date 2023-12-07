@@ -1,0 +1,29 @@
+### GET - get all teams
+GET {{baseUrl}}/api/Team/GetAll
+Accept: application/json
+
+### GET - get team by id
+GET {{baseUrl}}/api/Team/GetById/{{teamOneId}}
+Accept: application/json
+
+### GET - get teams by sport id
+GET {{baseUrl}}/api/Team/GetTeamsBySportId/{{sportOneId}}
+Accept: application/json
+
+### POST - create team
+POST {{baseUrl}}/api/Team
+Content-Type: application/json
+
+{
+  "name": "New Team",
+  "sportId": "{{sportTwoId}}"
+}
+
+### PUT - update team
+PUT {{baseUrl}}/api/Team/{{teamOneId}}
+Content-Type: application/json
+
+{
+  "name": "Sport 1",
+  "sportId": "{{sportOneId}}"
+}
